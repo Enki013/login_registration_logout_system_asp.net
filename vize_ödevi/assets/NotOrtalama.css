@@ -1,0 +1,75 @@
+﻿/* Google Fonts'tan Poppins fontunu içe aktar */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* Navbar Stilleri */
+.navbar {
+    background-color: #009579; /* Navbar arkaplan rengi */
+    padding: 10px; /* Padding ayarı */
+    text-align: right; /* Metin hizalaması sağa */
+    border-radius: 6px; /* Kenar yumuşatma */
+}
+
+.logout-button {
+    background-color: #009579; /* Çıkış yap butonu arkaplan rengi */
+    color: white; /* Metin rengi */
+    border: none; /* Kenar çizgisi yok */
+    padding: 10px 20px; /* Yatay ve dikey padding */
+    cursor: pointer; /* Fare işareti türü */
+    font-family: 'Poppins', sans-serif; /* Font ailesi */
+}
+
+    .logout-button:hover {
+        background-color: #006653; /* Fare üstüne gelindiğinde butonun arkaplan rengi */
+    }
+
+/* Ortadaki Kutuların Stilleri */
+.container {
+    display: flex; /* Flex konteyner */
+    flex-direction: column; /* Dikey yönde sıralama */
+    align-items: center; /* Elemanları ortalamak için hizalama */
+    margin-top: 50px; /* Üstten boşluk */
+}
+
+    .container input[type="text"],
+    .container input[type="password"] {
+        width: 200px; /* Giriş kutularının genişliği */
+        padding: 10px; /* İç boşluklar */
+        margin: 5px; /* Kenar boşlukları */
+        border: 1px solid #ccc; /* Kenar çizgisi */
+        border-radius: 5px; /* Kenar yumuşatma */
+        font-size: 16px; /* Yazı boyutu */
+        font-family: 'Poppins', sans-serif; /* Font ailesi */
+    }
+
+    .container .button {
+        width: 200px; /* Buton genişliği */
+        padding: 10px; /* İç boşluklar */
+        margin: 10px 0; /* Kenar boşlukları */
+        border: none; /* Kenar çizgisi yok */
+        border-radius: 5px; /* Kenar yumuşatma */
+        background-color: #009579; /* Buton arkaplan rengi */
+        color: #fff; /* Metin rengi */
+        font-size: 16px; /* Yazı boyutu */
+        cursor: pointer; /* Fare işareti türü */
+        font-family: 'Poppins', sans-serif; /* Font ailesi */
+    }
+
+        .container .button:hover {
+            background-color: #006653; /* Fare üstüne gelindiğinde buton arkaplan rengi */
+        }
+
+    .container .result {
+        width: 200px; /* Sonuç kutusunun genişliği */
+        text-align: center; /* Metin hizalaması */
+        font-size: 18px; /* Yazı boyutu */
+        font-family: 'Poppins', sans-serif; /* Font ailesi */
+    }
+
+/* Sayfa İçeriği Stillleri */
+.container {
+    display: flex; /* Flex konteyner */
+    justify-content: center; /* İçeriği yatayda ortala */
+    align-items: center; /* İçeriği dikeyde ortala */
+    height: 100vh; /* Ekran yüksekliği kadar alan kapla */
+    flex-direction: column; /* Dikey yönde sıralama */
+}

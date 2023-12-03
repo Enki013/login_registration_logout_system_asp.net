@@ -1,0 +1,126 @@
+﻿/* Google Fonts'tan Poppins fontunu içe aktar */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* Temel stillemeler */
+
+/* Resetleme */
+* {
+    margin: 0; /* Dış boşluk sıfırlama */
+    padding: 0; /* İç boşluk sıfırlama */
+    box-sizing: border-box; /* Kutu modelini border-box olarak ayarlama */
+    font-family: 'Poppins', sans-serif; /* Font ailesi */
+}
+
+/* Body stillemesi */
+body {
+    min-height: 100vh; /* Minimum ekran yüksekliği */
+    width: 100%; /* Genişlik */
+    background: #009579; /* Arka plan rengi */
+}
+
+/* Container stillemesi */
+.container {
+    position: absolute; /* Mutlak konumlandırma */
+    top: 50%; /* Üstten uzaklık yüzde */
+    left: 50%; /* Soldan uzaklık yüzde */
+    transform: translate(-50%, -50%); /* Konumu merkeze al */
+    max-width: 430px; /* Maksimum genişlik */
+    width: 100%; /* Genişlik */
+    background: #fff; /* Arka plan rengi */
+    border-radius: 7px; /* Kenar yumuşatma */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Kutuya gölge ekleme */
+}
+
+    /* Form stillemesi */
+    .container .form {
+        padding: 2rem; /* İç boşluk */
+    }
+
+/* Form başlığı stillemesi */
+.form header {
+    font-size: 2rem; /* Başlık yazı boyutu */
+    font-weight: 500; /* Başlık yazı kalınlığı */
+    text-align: center; /* Metin hizalama */
+    margin-bottom: 1.5rem; /* Alt boşluk */
+}
+
+/* Input alanları stillemesi */
+.form input {
+    height: 60px; /* Input alanı yüksekliği */
+    width: 100%; /* Genişlik */
+    padding: 0 15px; /* İç boşluklar */
+    font-size: 17px; /* Yazı boyutu */
+    margin-bottom: 1.3rem; /* Alt boşluk */
+    border: 1px solid #ddd; /* Kenar çizgisi */
+    border-radius: 6px; /* Kenar yumuşatma */
+    outline: none; /* Odak çizgisi yok */
+}
+
+    /* Input odaklandığında gölgelendirme efekti */
+    .form input:focus {
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2); /* Gölgelendirme efekti */
+    }
+
+/* Link stillemesi */
+.form a {
+    font-size: 16px; /* Yazı boyutu */
+    color: #009579; /* Link rengi */
+    text-decoration: none; /* Altı çizgi yok */
+}
+
+    .form a:hover {
+        text-decoration: underline; /* Fare üstüne gelindiğinde altı çizgi */
+    }
+
+/* Kayıt butonu stillemesi */
+.form input.button {
+    color: #fff; /* Metin rengi */
+    background: #009579; /* Buton rengi */
+    font-size: 1.2rem; /* Yazı boyutu */
+    font-weight: 500; /* Yazı kalınlığı */
+    letter-spacing: 1px; /* Harf aralığı */
+    margin-top: 1.7rem; /* Üst boşluk */
+    cursor: pointer; /* Fare işareti */
+    transition: 0.4s; /* Geçiş efekti süresi */
+}
+
+    .form input.button:hover {
+        background: #006653; /* Fare üstüne gelindiğinde buton rengi */
+    }
+
+/* Kayıt ve giriş linki stillemesi */
+.signup {
+    font-size: 17px; /* Yazı boyutu */
+    text-align: center; /* Metin hizalama */
+    margin-bottom: 10px; /* Alt boşluk */
+}
+
+    .signup label {
+        color: #009579; /* Metin rengi */
+        cursor: pointer; /* Fare işareti */
+    }
+
+        .signup label:hover {
+            text-decoration: underline; /* Fare üstüne gelindiğinde altı çizgi */
+        }
+
+/* Kayıt durumu ve hata mesajları için stillemeler */
+#lblKayitDurumu {
+    text-align: center; /* Metin hizalama */
+    font-size: 17px; /* Yazı boyutu */
+    display: block; /* Blok eleman */
+    margin-bottom: 5px; /* Alt boşluk */
+}
+
+#lblSifreKurallari {
+    text-align: center; /* Metin hizalama */
+    font-size: 17px; /* Yazı boyutu */
+    display: block; /* Blok eleman */
+}
+
+#lblKullaniciAdiKurallari {
+    text-align: center; /* Metin hizalama */
+    font-size: 17px; /* Yazı boyutu */
+    display: block; /* Blok eleman */
+    margin-bottom: 5px; /* Alt boşluk */
+}

@@ -1,0 +1,111 @@
+﻿/* Google Fonts'tan Poppins fontunu içe aktar */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* Genel stillemeler */
+
+/* Resetleme */
+* {
+    margin: 0; /* Dış boşlukları sıfırla */
+    padding: 0; /* İç boşlukları sıfırla */
+    box-sizing: border-box; /* Kutu modelini kullan (padding ve border içeriğe dahil olsun) */
+    font-family: 'Poppins', sans-serif; /* Sayfadaki tüm metinlerde Poppins fontunu kullan */
+}
+
+/* Body stillemesi */
+/* Sayfa arka planı ve boyutu */
+body {
+    min-height: 100vh; /* Sayfanın minimum yüksekliği, görüntülenen cihaza göre ayarlanır */
+    width: 100%; /* Sayfanın genişliği, görüntülenen cihaza göre ayarlanır */
+    background: #009579; /* Sayfa arka plan rengi */
+}
+
+/* Container stillemesi */
+.container {
+    position: absolute; /* Pozisyon: Mutlak; üst seviye kutuyu belirli bir konuma yerleştirir */
+    top: 50%; /* Üst kenarı, ekrandaki diğer içeriklere göre dikeyde ortalar */
+    left: 50%; /* Sol kenarı, ekrandaki diğer içeriklere göre yatayda ortalar */
+    transform: translate(-50%, -50%); /* Kutunun kendisini ortalar */
+    max-width: 430px; /* Kutunun maksimum genişliği */
+    width: 100%; /* Kutunun genişliği, diğer içeriklere göre ayarlanır */
+    background: #fff; /* Kutunun arka plan rengi */
+    border-radius: 7px; /* Kutunun kenar yuvarlatma miktarı */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Kutuya gölge ekler */
+}
+
+   
+    /* Form içeriğinin genel stillemesi */
+    .container .form {
+        padding: 2rem; /* Form içeriğinin iç kenar boşluğu */
+    }
+
+/* Form başlığı için boyut ve hizalama */
+.form header {
+    font-size: 2rem; /* Başlık metni boyutu */
+    font-weight: 500; /* Başlık metni kalınlığı */
+    text-align: center; /* Başlığı ortala */
+    margin-bottom: 1.5rem; /* Başlık alt boşluğu */
+}
+
+/* Input alanları için genel stillemeler */
+.form input {
+    height: 60px; /* Input kutusunun yüksekliği */
+    width: 100%; /* Input kutusunun genişliği */
+    padding: 0 15px; /* Input kutusu içeriği ile kenarlar arasındaki boşluk */
+    font-size: 17px; /* Input kutusu metin boyutu */
+    margin-bottom: 1.3rem; /* Input kutusu alt boşluğu */
+    border: 1px solid #ddd; /* Input kutusu kenar çizgisi */
+    border-radius: 6px; /* Input kutusu kenar yuvarlatma miktarı */
+    outline: none; /* Odaklanma durumunda kenarlık oluşmasını engeller */
+}
+
+    /* Input odaklandığında gölgelendirme efekti */
+    .form input:focus {
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2); /* Input kutusu odaklandığında gölge efekti */
+    }
+
+/* Linklerin görünümü */
+.form a {
+    font-size: 16px; /* Link metni boyutu */
+    color: #009579; /* Link rengi */
+    text-decoration: none; /* Link altı çizgisi kaldırılır */
+}
+
+    /* Hover durumunda altı çizili linkler */
+    .form a:hover {
+        text-decoration: underline; /* Link üzerine gelindiğinde altı çizgi efekti */
+    }
+
+/* Giriş butonunun görünümü */
+.form input.button {
+    color: #fff; /* Buton metin rengi */
+    background: #009579; /* Buton arka plan rengi */
+    font-size: 1.2rem; /* Buton metin boyutu */
+    font-weight: 500; /* Buton metin kalınlığı */
+    letter-spacing: 1px; /* Harf aralığı */
+    margin-top: 1.7rem; /* Buton üst boşluğu */
+    cursor: pointer; /* Fare üstüne gelince imleç tipi */
+    transition: 0.4s; /* Buton geçiş efekti süresi */
+}
+
+    /* Buton hover durumunda arka plan rengi değişimi */
+    .form input.button:hover {
+        background: #006653; /* Buton hover durumunda arka plan rengi değişimi */
+    }
+
+/* Kayıt olma linkinin görünümü */
+.signup {
+    font-size: 17px; /* Kayıt olma linki metin boyutu */
+    text-align: center; /* Kayıt olma linki hizalama */
+    margin-bottom: 10px; /* Kayıt olma linki alt boşluğu */
+}
+
+    /* Kayıt olma linki hover durumunda altı çizili */
+    .signup label:hover {
+        text-decoration: underline; /* Kayıt olma linki üzerine gelindiğinde altı çizgi efekti */
+    }
+
+/* Giriş durumu etiketinin görünümü */
+#lblGirisDurumu {
+    text-align: center; /* Giriş durumu etiketi hizalama */
+    font-size: 17px; /* Giriş durumu etiketi metin boyutu */
+    display: block; /* Etiket blok öğe olarak görüntülenir */
